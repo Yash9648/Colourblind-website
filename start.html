@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<title>Colourblind Test
+</title>
+<link rel="stylesheet" href="startstyle.css">
+</head>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Eyecare</a>
+  <div class="header-right">
+    <a  href="nav.html">Home</a>
+    <a class="active" href="start.html">Take Test</a>
+    <a  href="about.html">About</a>
+  </div>
+</div>
+<div id="boxout">
+<h1> Colorblindness test </h1>
+<hr>
+<center><h3><b>Look at the pictures below, and enter the numbers that you see in the corresponding boxes.</b></h3></center>
+
+<div id="box">
+<div class="nitro" >
+<p><img src="colorblind-test-image1.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash1">
+<input type="button" onclick="display('7','number1','yash1')" value="submit">
+<div id="number1"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image2.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash2">
+<input type="button" onclick="display('6','number2','yash2')" value="submit">
+<div id="number2"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image3.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash3">
+<input type="button" onclick="display('26','number3','yash3')" value="submit">
+<div id="number3"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image4.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash4">
+<input type="button" onclick="display('15','number4','yash4')" value="submit">
+<div id="number4"></div></p>
+</div>
+
+<div class="nitro">
+<p><img src="colorblind-test-image6.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash6">
+<input type="button" onclick="display('73','number6','yash6')" value="submit">
+<div id="number6"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image7.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash7">
+<input type="button" onclick="display('5','number7','yash7')" value="submit">
+<div id="number7"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image8.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash8">
+<input type="button" onclick="display('16','number8','yash8')" value="submit">
+<div id="number8"></div></p>
+</div>
+<div class="nitro">
+<p><img src="colorblind-test-image9.webp" width="250" height="250"></p>
+<p> <input type="number" class="answerbox" placeholder="Enter the number" id="yash9">
+<input type="button" onclick="display('45','number9','yash9')" value="submit">
+<div id="number9"></div></p>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="footer">
+  <p >Eyecare</p>
+  <p >copyright &copy;2022  </p>
+</div>
+
+
+<script>
+function display(a,b,c)
+{var d=document.getElementById(c).value;
+  if(d==a){document.getElementById(b).innerHTML='correct'} 
+
+  else{document.getElementById(b).innerHTML="Wrong!correct number is "+a+" if your are colourblined you won't see it."} 
+}
+</script>
+
+</body>
+</html>
